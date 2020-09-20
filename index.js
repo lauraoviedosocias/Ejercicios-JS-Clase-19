@@ -96,34 +96,66 @@
 // Crear un documento html que tenga 6 botones con un color de fondo distinto, y un div cuadrado grande. 
 // Cuando se clickea un botón, el div debe cambiar su color de fondo al mismo color de fondo que el del botón clickeado.
 
-const botonGrande = document.querySelector("#boton-grande")
-const botonRojo = document.querySelector("#rojo")
-const botonAmarillo = document.querySelector("#amarillo")
-const botonNegro = document.querySelector("#negro")
-const botonRosa = document.querySelector("#rosa")
-const botonPeru = document.querySelector("#peru")
-const botonAzul = document.querySelector("#azul")
+// const botonGrande = document.querySelector("#boton-grande")
+// const botonRojo = document.querySelector("#rojo")
+// const botonAmarillo = document.querySelector("#amarillo")
+// const botonNegro = document.querySelector("#negro")
+// const botonRosa = document.querySelector("#rosa")
+// const botonPeru = document.querySelector("#peru")
+// const botonAzul = document.querySelector("#azul")
 
-botonRojo.onclick = () => {
-    botonGrande.classList.add("rojo")
+// botonRojo.onclick = () => {
+//     botonGrande.classList.add("rojo")
+// }
+
+// botonAmarillo.onclick = () => {
+//     botonGrande.classList.add("amarillo")
+// }
+
+// botonNegro.onclick = () => {
+//     botonGrande.classList.add("negro")
+// }
+
+// botonRosa.onclick = () => {
+//     botonGrande.classList.add("rosa")
+// }
+
+// botonPeru.onclick = () => {
+//     botonGrande.classList.add("peru")
+// }
+
+// botonAzul.onclick = () => {
+//     botonGrande.classList.add("azul")
+// }
+
+// email (sin leer)
+// Crear un documento html que tenga:
+
+// un título h1 que diga: Mis emails
+// un título h2 que diga: Bandeja de entrada
+// una lista desordenada con 10 ítems con lorem ipsum (4 o 5 palabras cada uno, no un párrafo entero)
+// Inicialmente los ítems deben estar en negrita y con color negro. Cuando se clickea uno de ellos, 
+// se debe sacarle la negrita y ponerle un color gris (simulando que el email fue leído)
+
+const emails = document.getElementsByTagName("li")
+
+console.log(emails)
+
+for (let email of emails) {
+    email.onclick = () => {
+        if (email.classList.contains("no-leido")) {
+            email.classList.add("leido")
+        }
+}
 }
 
-botonAmarillo.onclick = () => {
-    botonGrande.classList.add("amarillo")
-}
+// progreso
+// Crear un documento html con
 
-botonNegro.onclick = () => {
-    botonGrande.classList.add("negro")
-}
-
-botonRosa.onclick = () => {
-    botonGrande.classList.add("rosa")
-}
-
-botonPeru.onclick = () => {
-    botonGrande.classList.add("peru")
-}
-
-botonAzul.onclick = () => {
-    botonGrande.classList.add("azul")
-}
+// una barra de progreso (con un div dentro de otro)
+// un elemento de texto que indique el progreso (p. ej. 50%)
+// dos botones, uno para incrementar y otro para dismininuir la barra (- y +)
+// cuando se apretan los botones, la barra de progreso tiene que aumentar o disminuir respectivamente y el texto que indica el porcentaje de 
+// progreso tiene que actualizarse
+// lo mismo tiene que pasar cuando se apreta la flecha derecha (aumentar progreso) y la flecha izquierda (disminuir progreso)
+// el incremento/decremento es del 10%

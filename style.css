@@ -5,7 +5,7 @@
 .rojo {
     background-color: red;
 } */
-.contenedor {
+/* .contenedor {
     display: flex;
     background-color: wheat;
 }
@@ -84,4 +84,18 @@
 .azul {
     background-color: blue;
     
+} */
+
+.caja {
+    border: 1px solid pink;
+}
+
+.no-leido {
+    font-weight: bold;
+    color: black;
+}
+
+.leido {
+    font-weight: normal;
+    color: grey;
 }
