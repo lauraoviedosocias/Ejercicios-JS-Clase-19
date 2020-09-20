@@ -1,7 +1,87 @@
-.verde {
+/* .verde {
     background-color: green;
 }
 
 .rojo {
     background-color: red;
+} */
+.contenedor {
+    display: flex;
+    background-color: wheat;
+}
+
+#boton-grande {
+    
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+}
+
+#rojo {
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+}
+
+#amarillo {
+    background-color: yellow;
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+}
+
+#negro {
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+}
+
+#rosa {
+    background-color: pink;
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+}
+
+#peru {
+    background-color: peru;
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+}
+
+#azul {
+    background-color: blue;
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+}
+
+.rojo {
+    background-color: red;
+}
+
+.amarillo {
+    background-color: yellow;
+}
+
+.negro {
+    background-color: black;
+}
+
+.rosa {
+    background-color: pink;
+}
+
+.peru {
+    background-color: peru;
+    
+}
+
+.azul {
+    background-color: blue;
+    
 }

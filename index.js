@@ -59,35 +59,71 @@
 // Crear un documento html que muestre un número (empezando en 0) y 6 botones con los siguientes valores: -1, +1, -5, +5, -10, +10. 
 // Cuando se clickea un botón, se tiene que sumar o restar la cantidad correspondiente, y actualizar el número mostrado.
 
-const botonMenosUno = document.querySelector(".boton-menos-uno")
-const botonMasUno = document.querySelector(".boton-mas-uno")
-const botonMenosCinco = document.querySelector(".boton-menos-cinco")
-const botonMasCinco = document.querySelector(".boton-mas-cinco")
-const botonMenosDiez = document.querySelector(".boton-menos-diez")
-const botonMasDiez = document.querySelector(".boton-mas-diez")
-const operando = document.querySelector("#operando")
+// const botonMenosUno = document.querySelector(".boton-menos-uno")
+// const botonMasUno = document.querySelector(".boton-mas-uno")
+// const botonMenosCinco = document.querySelector(".boton-menos-cinco")
+// const botonMasCinco = document.querySelector(".boton-mas-cinco")
+// const botonMenosDiez = document.querySelector(".boton-menos-diez")
+// const botonMasDiez = document.querySelector(".boton-mas-diez")
+// const operando = document.querySelector("#operando")
 
 
-botonMenosUno.onclick = () => {
-    operando.textContent = "04"
+// botonMenosUno.onclick = () => {
+//     operando.textContent = "04"
+// }
+
+// botonMasUno.onclick = () => {
+//     operando.textContent = "06"
+// }
+
+// botonMenosCinco.onclick = () => {
+//     operando.textContent = "0"
+// }
+
+// botonMasCinco.onclick = () => {
+//     operando.textContent = "10"
+// }
+
+// botonMenosDiez.onclick = () => {
+//     operando.textContent = "-05"
+// }
+
+// botonMasDiez.onclick = () => {
+//     operando.textContent = "15"
+// }
+
+// paleta
+// Crear un documento html que tenga 6 botones con un color de fondo distinto, y un div cuadrado grande. 
+// Cuando se clickea un botón, el div debe cambiar su color de fondo al mismo color de fondo que el del botón clickeado.
+
+const botonGrande = document.querySelector("#boton-grande")
+const botonRojo = document.querySelector("#rojo")
+const botonAmarillo = document.querySelector("#amarillo")
+const botonNegro = document.querySelector("#negro")
+const botonRosa = document.querySelector("#rosa")
+const botonPeru = document.querySelector("#peru")
+const botonAzul = document.querySelector("#azul")
+
+botonRojo.onclick = () => {
+    botonGrande.classList.add("rojo")
 }
 
-botonMasUno.onclick = () => {
-    operando.textContent = "06"
+botonAmarillo.onclick = () => {
+    botonGrande.classList.add("amarillo")
 }
 
-botonMenosCinco.onclick = () => {
-    operando.textContent = "0"
+botonNegro.onclick = () => {
+    botonGrande.classList.add("negro")
 }
 
-botonMasCinco.onclick = () => {
-    operando.textContent = "10"
+botonRosa.onclick = () => {
+    botonGrande.classList.add("rosa")
 }
 
-botonMenosDiez.onclick = () => {
-    operando.textContent = "-05"
+botonPeru.onclick = () => {
+    botonGrande.classList.add("peru")
 }
 
-botonMasDiez.onclick = () => {
-    operando.textContent = "15"
+botonAzul.onclick = () => {
+    botonGrande.classList.add("azul")
 }
