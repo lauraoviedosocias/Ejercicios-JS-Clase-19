@@ -30,27 +30,64 @@
 // ponerse con un color de fondo verde. Si se clickea una respuesta incorrecta, se debe mostrar en el documento un texto que lo indique 
 // (por ejemplo: ¡Le erraste!) y mostrar el botón con la respuesta correcta con un color de fondo verde y los otros dos con un color de fondo rojo.
 
-const primerBoton = document.getElementById("boton1")
-const segundoBoton = document.getElementById("boton2")
-const tercerBoton = document.getElementById("boton3")
-const resultado = document.getElementById("resultado")
+// const primerBoton = document.getElementById("boton1")
+// const segundoBoton = document.getElementById("boton2")
+// const tercerBoton = document.getElementById("boton3")
+// const resultado = document.getElementById("resultado")
 
 
-primerBoton.onclick = () => {
-    resultado.textContent = ("Correcto")
-    primerBoton.classList.add("verde")
+// primerBoton.onclick = () => {
+//     resultado.textContent = ("Correcto")
+//     primerBoton.classList.add("verde")
+// }
+
+// segundoBoton.onclick = () => {
+//     resultado.textContent = ("Incorrecto")
+//     segundoBoton.classList.add("rojo")
+//     primerBoton.classList.add("verde")
+//     tercerBoton.classList.add("rojo")
+// }
+
+// tercerBoton.onclick = () => {
+//     resultado.textContent = ("Incorrecto")
+//     tercerBoton.classList.add("rojo")
+//     primerBoton.classList.add("verde")
+//     segundoBoton.classList.add("rojo")
+// }
+
+// contador
+// Crear un documento html que muestre un número (empezando en 0) y 6 botones con los siguientes valores: -1, +1, -5, +5, -10, +10. 
+// Cuando se clickea un botón, se tiene que sumar o restar la cantidad correspondiente, y actualizar el número mostrado.
+
+const botonMenosUno = document.querySelector(".boton-menos-uno")
+const botonMasUno = document.querySelector(".boton-mas-uno")
+const botonMenosCinco = document.querySelector(".boton-menos-cinco")
+const botonMasCinco = document.querySelector(".boton-mas-cinco")
+const botonMenosDiez = document.querySelector(".boton-menos-diez")
+const botonMasDiez = document.querySelector(".boton-mas-diez")
+const operando = document.querySelector("#operando")
+
+
+botonMenosUno.onclick = () => {
+    operando.textContent = "04"
 }
 
-segundoBoton.onclick = () => {
-    resultado.textContent = ("Incorrecto")
-    segundoBoton.classList.add("rojo")
-    primerBoton.classList.add("verde")
-    tercerBoton.classList.add("rojo")
+botonMasUno.onclick = () => {
+    operando.textContent = "06"
 }
 
-tercerBoton.onclick = () => {
-    resultado.textContent = ("Incorrecto")
-    tercerBoton.classList.add("rojo")
-    primerBoton.classList.add("verde")
-    segundoBoton.classList.add("rojo")
+botonMenosCinco.onclick = () => {
+    operando.textContent = "0"
+}
+
+botonMasCinco.onclick = () => {
+    operando.textContent = "10"
+}
+
+botonMenosDiez.onclick = () => {
+    operando.textContent = "-05"
+}
+
+botonMasDiez.onclick = () => {
+    operando.textContent = "15"
 }
