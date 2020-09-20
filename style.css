@@ -85,7 +85,7 @@
     background-color: blue;
     
 } */
-
+/* 
 .caja {
     border: 1px solid pink;
 }
@@ -98,4 +98,30 @@
 .leido {
     font-weight: normal;
     color: grey;
+} */
+
+.barra {
+    width: 400px;
+    height: 30px;
+    background-color: peru;
+    border: 2px solid;
+}
+
+.progreso {
+    width: 0px;
+    height: 30px;
+    background-color: black;
+
+}
+.mas-100 {
+    width: 100px;
+}
+.mas-200 {
+    width: 200px;
+}
+.mas-300 {
+    width: 300px;
+}
+.mas-400 {
+    width: 400px;
 }

@@ -137,17 +137,17 @@
 // Inicialmente los ítems deben estar en negrita y con color negro. Cuando se clickea uno de ellos, 
 // se debe sacarle la negrita y ponerle un color gris (simulando que el email fue leído)
 
-const emails = document.getElementsByTagName("li")
+// const emails = document.getElementsByTagName("li")
 
-console.log(emails)
+// console.log(emails)
 
-for (let email of emails) {
-    email.onclick = () => {
-        if (email.classList.contains("no-leido")) {
-            email.classList.add("leido")
-        }
-}
-}
+// for (let email of emails) {
+//     email.onclick = () => {
+//         if (email.classList.contains("no-leido")) {
+//             email.classList.add("leido")
+//         }
+// }
+// }
 
 // progreso
 // Crear un documento html con
@@ -159,3 +159,33 @@ for (let email of emails) {
 // progreso tiene que actualizarse
 // lo mismo tiene que pasar cuando se apreta la flecha derecha (aumentar progreso) y la flecha izquierda (disminuir progreso)
 // el incremento/decremento es del 10%
+
+const progreso = document.querySelector(".progreso")
+const botonMas = document.querySelector("#mas")
+const botonMenos = document.querySelector("#menos")
+
+botonMas.onclick = () => {
+    if (progreso.classList.contains("mas-100")) {
+        progreso.classList.add("mas-200")
+    }
+    // else if (progreso.classList.contains("mas-200")) {
+    //     progreso.classList.remove("mas-200")
+    //     progreso.classList.add("mas-300")
+    // }
+    else {
+        progreso.classList.add("mas-100")
+    }
+
+}
+
+botonMenos.onclick = () => {
+    if (progreso.classList.contains("mas-200")) {
+        progreso.classList.remove("mas-200")
+        progreso.classList.add("mas-100")
+    }
+    else {
+        progreso.classList.remove("mas-100")
+    }
+
+}
+
